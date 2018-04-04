@@ -303,6 +303,8 @@
     <build>
         <defaultGoal>spring-boot:run</defaultGoal>
         <plugins>
+
+            <!-- AJOUTER LE PLUGIN TOMCAT ICI -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
