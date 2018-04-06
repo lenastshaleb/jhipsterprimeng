@@ -1,0 +1,27 @@
+$background-color: rgb(131, 189, 255);
+$font-color :  rgb(234, 253, 255);
+$font-size: 1.4em;
+$font-family: 'Helvetica Neue', sans-serif;
+
+.ui-inputtext{
+    background-color: $background-color;
+    color: $font-color;
+    font-size: $font-size;
+    font-family: $font-family;
+}
+
+.ui-button{
+
+    background-color: $background-color;
+    color: $font-color;
+    font-size: $font-size;
+    font-family: $font-family;
+}
+
+.ui-button-text{
+
+    background-color: $background-color;
+    color: $font-color;
+    font-size: $font-size;
+    font-family: $font-family;
+}

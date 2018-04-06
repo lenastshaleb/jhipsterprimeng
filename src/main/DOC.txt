@@ -1,0 +1,49 @@
+1-Installer java
+  Ajouter JAVA_HOME aux variables d'environnements
+  Installer nodejs
+  Installer yarn
+  Installer yeoman 
+
+(voire leur site respectifs et suivre les tutos d'installations)
+
+2-Installer le générateur Jhipster (suivre exactement les instructions sur le site officiel), générer les entitées (JDL)
+
+3- Générer l'app : yo jhipster (suivre les instructions)
+
+4- Installer primeng : npm install primeng --save
+	=> ça supprime aussi pleins d'autres packets, ce qui fait planter le démarrage de l'application en front car il y a des modules manquants 
+5- Désinstaller primeng : npm uninstall primeng
+	=> ça supprime prime ng mais ça réinstalle les autres modules supprimés (cf cmde précédente)
+6- Installer primeng en global : npm install -g primeng
+
+7- Installer primeng (inclusion dans les dépendances de l'app) : npm install primeng --save
+
+8- Inclure le style dans le module à utiliser "XXXXXX.component.ts (Voir comment plus bas)
+
+9- lancer l'appli front : yarn start
+	=>OK
+10- lancer l'appli back (indépendant des erreurs citées plus haut) : mvnw (sous windows)
+	=OK
+
+PS: il existe un générateur d'application Jhipster avec primeng préinstallé :
+	- npm install generator-jhipster-primeng
+	- yo jhipster-primeng
+	=> erreur fichier "can't read .yo-rc.json"
+	=> je n'ai pas été plus loin car la première solution fonctionne
+
+POUR LE CSS CUSTOM:
+
+1- Ajouter "encapsulation: ViewEncapsulation.None" après styleUrels dans XXXX.component.ts (désactive l'encapsulation)
+
+2- Créer un fichier "css_custom.scss" et le mettre dans "src\main\webapp\content\scss" (contiendra le scss de customisation)
+
+3- Ajouter "@import 'css_custom.scss';" à la fin de "global.scss" contenu dans "src\main\webapp\content\scss" (appliquera la customisation)
+
+4- Ajouter les composant Primeng dans "XXXX.component.html"
+
+5- Importer les modules de ces composants dans XXXX.module.ts (les importer et les déclarer dans la partie "imports")
+
+6- RUN
+
+
+CQFD

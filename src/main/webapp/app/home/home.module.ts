@@ -7,11 +7,17 @@ import { HOME_ROUTE, HomeComponent } from './';
 
 import {ButtonModule} from 'primeng/button';
 
+import {DataTableModule} from 'primeng/datatable';
+
+import {InputTextModule} from 'primeng/inputtext';
+
 @NgModule({
     imports: [
         JhipsterPrimengAppSharedModule,
         RouterModule.forChild([ HOME_ROUTE ]),
-        ButtonModule
+        ButtonModule,
+        DataTableModule,
+        InputTextModule
     ],
     declarations: [
         HomeComponent,

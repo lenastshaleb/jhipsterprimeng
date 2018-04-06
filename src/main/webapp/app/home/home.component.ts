@@ -3,6 +3,7 @@ import { NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { JhiEventManager } from 'ng-jhipster';
 
 import { Account, LoginModalService, Principal } from '../shared';
+import { ViewEncapsulation } from '@angular/core';
 
 @Component({
     selector: 'jhi-home',
@@ -12,7 +13,8 @@ import { Account, LoginModalService, Principal } from '../shared';
         '..\\..\\..\\..\\..\\node_modules\\font-awesome\\css\\font-awesome.min.css',
         '..\\..\\..\\..\\..\\node_modules\\primeng\\resources\\themes\\omega\\theme.css',
         '..\\..\\..\\..\\..\\node_modules\\primeng\\resources\\primeng.min.css'
-    ]
+    ],
+    encapsulation: ViewEncapsulation.None
 
 })
 export class HomeComponent implements OnInit {
