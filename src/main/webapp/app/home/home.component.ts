@@ -8,7 +8,10 @@ import { Account, LoginModalService, Principal } from '../shared';
     selector: 'jhi-home',
     templateUrl: './home.component.html',
     styleUrls: [
-        'home.scss'
+        'home.scss',
+        '..\\..\\..\\..\\..\\node_modules\\font-awesome\\css\\font-awesome.min.css',
+        '..\\..\\..\\..\\..\\node_modules\\primeng\\resources\\themes\\omega\\theme.css',
+        '..\\..\\..\\..\\..\\node_modules\\primeng\\resources\\primeng.min.css'
     ]
 
 })

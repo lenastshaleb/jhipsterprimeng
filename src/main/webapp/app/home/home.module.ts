@@ -5,10 +5,13 @@ import { JhipsterPrimengAppSharedModule } from '../shared';
 
 import { HOME_ROUTE, HomeComponent } from './';
 
+import {ButtonModule} from 'primeng/button';
+
 @NgModule({
     imports: [
         JhipsterPrimengAppSharedModule,
-        RouterModule.forChild([ HOME_ROUTE ])
+        RouterModule.forChild([ HOME_ROUTE ]),
+        ButtonModule
     ],
     declarations: [
         HomeComponent,

@@ -11,6 +11,7 @@ export type EntityResponseType = HttpResponse<Country>;
 @Injectable()
 export class CountryService {
 
+    // lenas = "test ok";
     private resourceUrl =  SERVER_API_URL + 'api/countries';
 
     constructor(private http: HttpClient) { }
@@ -71,4 +72,9 @@ export class CountryService {
         const copy: Country = Object.assign({}, country);
         return copy;
     }
+
+    // getTestLenas()
+    // {
+    //    return this.lenas;
+    // }
 }
